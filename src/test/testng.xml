@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+
+    <test verbose="1" preserve-order="true" name="Sign up" enabled="true">
+        <parameter name="portNumber" value="4723"/>
+        <parameter name="systemPort" value="8200"/>
+        <parameter name="deviceName" value="emulator-5554"/>
+        <classes>
+           <class name="Tests.SignUpSnapchat" >
+            <methods>
+                <include name="signup"/>
+                <include name="test2"/>
+                <include name="test3"/>
+                <exclude name="test4"/>
+            </methods>
+            </class>
+       </classes>
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="signup snapchat" enabled="false">
+        <parameter name="portNumber" value="4724"/>
+        <parameter name="systemPort" value="8201"/>
+        <parameter name="deviceName" value="localhost:5645"/>
+
+        <classes>
+            <class name="Tests.SignUpSnapchat" >
+                <methods>
+                    <include name="signup"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="3" preserve-order="true" name="signup snapchat 2" enabled="false">
+        <parameter name="portNumber" value="4725"/>
+        <parameter name="systemPort" value="8202"/>
+        <parameter name="deviceName" value="localhost:5655"/>
+
+        <classes>
+            <class name="Tests.SignUpSnapchat" >
+                <methods>
+                    <include name="signup"/>
+                    <exclude name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

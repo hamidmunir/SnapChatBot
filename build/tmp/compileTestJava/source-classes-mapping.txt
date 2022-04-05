@@ -1,0 +1,10 @@
+Base/BasePage.java
+ Base.BasePage
+Base/DriverManager.java
+ Base.DriverManager
+Pages/Loginpage.java
+ Pages.Loginpage
+Base/BaseTest.java
+ Base.BaseTest
+Tests/SignUpSnapchat.java
+ Tests.SignUpSnapchat

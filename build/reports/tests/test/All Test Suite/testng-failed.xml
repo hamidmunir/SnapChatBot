@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="3" parallel="tests" name="Sign up(failed)" verbose="0">
+    <parameter name="deviceName" value="localhost:5555"/>
+    <parameter name="portNumber" value="4723"/>
+    <parameter name="systemPort" value="8200"/>
+    <classes>
+      <class name="Tests.SignUpSnapchat">
+        <methods>
+          <include name="quit"/>
+          <include name="signup"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Tests.SignUpSnapchat -->
+    </classes>
+  </test> <!-- Sign up(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

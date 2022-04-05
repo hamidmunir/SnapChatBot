@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Tests.SignUpSnapchat</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Tests.SignUpSnapchat</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/Tests.html">Tests</a> &gt; SignUpSnapchat</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.315s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="beforeTest"></a>
+<h3 class="failures">beforeTest</h3>
+<span class="code">
+<pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell getprop ro.build.version.sdk' exited with code 1'; Command output: adb.exe: device offline
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-69FJGNM', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell getprop ro.build.version.sdk' exited with code 1'; Command output: adb.exe: device offline
+
+    at getResponseForW3CError (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-69FJGNM', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:96)
+	at Base.DriverManager.initializeDriver(DriverManager.java:38)
+	at Base.BaseTest.beforeTest(BaseTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell getprop ro.build.version.sdk' exited with code 1'; Command output: adb.exe: device offline
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-69FJGNM', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell getprop ro.build.version.sdk' exited with code 1'; Command output: adb.exe: device offline
+
+    at getResponseForW3CError (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 43 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">beforeTest</td>
+<td class="failures">3.315s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="skipped">signup</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[35m[Appium]?[39m Welcome to Appium v1.22.3
+?[35m[Appium]?[39m Non-default server args:
+?[35m[Appium]?[39m   address: 127.0.0.1
+?[35m[Appium]?[39m Appium REST http interface listener started on 127.0.0.1:4723
+?[35m[HTTP]?[39m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/hub/status?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+[debug] ?[35m[GENERIC]?[39m Calling AppiumDriver.getStatus() with args: []
+[debug] ?[35m[GENERIC]?[39m Responding to client with driver.getStatus() result: {&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}}
+?[35m[HTTP]?[39m ?[37m&lt;-- GET /wd/hub/status ?[39m?[32m200?[39m ?[90m7 ms - 68?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+Appium service started at port 4723
+[debug] ?[35m[HTTP]?[39m Request idempotency key: be8c42da-4deb-4ad8-8960-b244e209cb3a
+?[35m[HTTP]?[39m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/hub/session?[39m
+?[35m[HTTP]?[39m ?[90m{&quot;desiredCapabilities&quot;:{&quot;appActivity&quot;:&quot;com.snap.mushroom.MainActivity&quot;,&quot;appPackage&quot;:&quot;com.snapchat.android&quot;,&quot;automationName&quot;:&quot;UiAutomator2&quot;,&quot;autoGrantPermissions&quot;:true,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;localhost:5555&quot;,&quot;systemPort&quot;:&quot;8200&quot;},&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;appium:appActivity&quot;:&quot;com.snap.mushroom.MainActivity&quot;,&quot;appium:appPackage&quot;:&quot;com.snapchat.android&quot;,&quot;appium:autoGrantPermissions&quot;:true,&quot;appium:automationName&quot;:&quot;UiAutomator2&quot;,&quot;platformName&quot;:&quot;android&quot;,&quot;appium:systemPort&quot;:&quot;8200&quot;,&quot;appium:udid&quot;:&quot;localhost:5555&quot;}]}}?[39m
+[debug] ?[35m[W3C]?[39m Calling AppiumDriver.createSession() with args: [{&quot;appActivity&quot;:&quot;com.snap.mushroom.MainActivity&quot;,&quot;appPackage&quot;:&quot;com.snapchat.android&quot;,&quot;automationName&quot;:&quot;UiAutomator2&quot;,&quot;autoGrantPermissions&quot;:true,&quot;platformName&quot;:&quot;Android&quot;,&quot;udid&quot;:&quot;localhost:5555&quot;,&quot;systemPort&quot;:&quot;8200&quot;},null,{&quot;firstMatch&quot;:[{&quot;appium:appActivity&quot;:&quot;com.snap.mushroom.MainActivity&quot;,&quot;appium:appPackage&quot;:&quot;com.snapchat.android&quot;,&quot;appium:autoGrantPermissions&quot;:true,&quot;appium:automationName&quot;:&quot;UiAutomator2&quot;,&quot;platformName&quot;:&quot;android&quot;,&quot;appium:systemPort&quot;:&quot;8200&quot;,&quot;appium:udid&quot;:&quot;localhost:5555&quot;}]}]
+[debug] ?[35m[BaseDriver]?[39m Event 'newSessionRequested' logged at 1648869993288 (08:26:33 GMT+0500 (Pakistan Standard Time))
+?[35m[Appium]?[39m Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] ?[35m[BaseDriver]?[39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] ?[35m[BaseDriver]?[39m Creating session with W3C capabilities: {
+[debug] ?[35m[BaseDriver]?[39m   &quot;alwaysMatch&quot;: {
+[debug] ?[35m[BaseDriver]?[39m     &quot;platformName&quot;: &quot;android&quot;,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:appActivity&quot;: &quot;com.snap.mushroom.MainActivity&quot;,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:appPackage&quot;: &quot;com.snapchat.android&quot;,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:autoGrantPermissions&quot;: true,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:systemPort&quot;: &quot;8200&quot;,
+[debug] ?[35m[BaseDriver]?[39m     &quot;appium:udid&quot;: &quot;localhost:5555&quot;
+[debug] ?[35m[BaseDriver]?[39m   },
+[debug] ?[35m[BaseDriver]?[39m   &quot;firstMatch&quot;: [
+[debug] ?[35m[BaseDriver]?[39m     {}
+[debug] ?[35m[BaseDriver]?[39m   ]
+[debug] ?[35m[BaseDriver]?[39m }
+?[35m[BaseDriver]?[39m Number capability passed in as string. Functionality may be compromised.
+?[35m[BaseDriver]?[39m Capability 'systemPort' changed from string ('8200') to integer (8200). This may cause unexpected behavior
+?[35m[BaseDriver]?[39m Session created with session id: 85d9a608-f6b4-418d-9c91-bc02eec1693a
+?[35m[UiAutomator2]?[39m Starting 'com.snapchat.android' directly on the device
+?[35m[ADB]?[39m Found 1 'build-tools' folders under 'C:\Users\mzaid\AppData\Local\Android\Sdk' (newest first):
+?[35m[ADB]?[39m     C:/Users/mzaid/AppData/Local/Android/Sdk/build-tools/31.0.0
+?[35m[ADB]?[39m Using 'adb.exe' from 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+?[35m[AndroidDriver]?[39m Retrieving device list
+[debug] ?[35m[ADB]?[39m Trying to find a connected android device
+[debug] ?[35m[ADB]?[39m Getting connected devices
+[debug] ?[35m[ADB]?[39m Connected devices: [{&quot;udid&quot;:&quot;localhost:5555&quot;,&quot;state&quot;:&quot;device&quot;},{&quot;udid&quot;:&quot;localhost:5645&quot;,&quot;state&quot;:&quot;device&quot;},{&quot;udid&quot;:&quot;localhost:5655&quot;,&quot;state&quot;:&quot;device&quot;}]
+?[35m[AndroidDriver]?[39m Using device: localhost:5555
+?[35m[ADB]?[39m Using 'adb.exe' from 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] ?[35m[ADB]?[39m Setting device id to localhost:5555
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s localhost:5555 shell getprop ro.build.version.sdk'
+[debug] ?[35m[UiAutomator2]?[39m Deleting UiAutomator2 session
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s localhost:5555 shell am force-stop com.snapchat.android'
+?[35m[UiAutomator2]?[39m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell am force-stop com.snapchat.android' exited with code 1'; Command output: adb.exe: device offline
+?[35m[UiAutomator2]?[39m 
+[debug] ?[35m[ADB]?[39m Removing forwarded port socket connection: 8200 
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s localhost:5555 forward --remove tcp:8200'
+?[35m[UiAutomator2]?[39m Unable to remove system port forward: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 forward --remove tcp\:8200' exited with code 1'; Command output: adb.exe: error: device offline
+?[35m[UiAutomator2]?[39m 
+[debug] ?[35m[ADB]?[39m Running 'C:\Users\mzaid\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s localhost:5555 shell getprop ro.build.version.sdk'
+[debug] ?[35m[BaseDriver]?[39m Event 'newSessionStarted' logged at 1648869993679 (08:26:33 GMT+0500 (Pakistan Standard Time))
+[debug] ?[35m[W3C]?[39m Encountered internal error running command: Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\mzaid\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s localhost\:5555 shell getprop ro.build.version.sdk' exited with code 1'; Command output: adb.exe: device offline
+[debug] ?[35m[W3C]?[39m 
+[debug] ?[35m[W3C]?[39m     at ADB.getApiLevel (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\adb-commands.js:159:13)
+[debug] ?[35m[W3C]?[39m     at AndroidUiautomator2Driver.deleteSession (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:671:11)
+[debug] ?[35m[W3C]?[39m     at AndroidUiautomator2Driver.createSession (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:238:7)
+[debug] ?[35m[W3C]?[39m     at AppiumDriver.createSession (C:\Users\mzaid\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+?[35m[HTTP]?[39m ?[37m&lt;-- POST /wd/hub/session ?[39m?[31m500?[39m ?[90m439 ms - 1191?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at Apr 2, 2022, 8:26:33 AM</p>
+</div>
+</div>
+</body>
+</html>
